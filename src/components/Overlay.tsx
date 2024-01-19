@@ -114,7 +114,7 @@ export default class JoyrideOverlay extends React.Component<OverlayProps, State>
       left: Math.round((elementRect?.left ?? 0) - spotlightPadding),
       opacity: showSpotlight ? 1 : 0,
       pointerEvents: spotlightClicks ? 'none' : 'auto',
-      position: isFixedTarget ? 'fixed' : 'absolute',
+      position: isFixedTarget ? 'fixed' : (this.props.positionOverride ?? 'absolute'),
       top,
       transition: 'opacity 0.2s',
       width: Math.round((elementRect?.width ?? 0) + spotlightPadding * 2),

@@ -102,6 +102,7 @@ export type Step = Simplify<
     placementBeacon?: Placement;
     target: string | HTMLElement;
     title?: ReactNode;
+    positionOverride?: "absolute" | "fixed" | "relative" | "static" | "sticky";
   }
 >;
 
