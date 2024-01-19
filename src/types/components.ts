@@ -100,9 +100,9 @@ export type Step = Simplify<
     offset?: number;
     placement?: Placement | 'auto' | 'center';
     placementBeacon?: Placement;
+    positionOverride?: 'absolute' | 'fixed' | 'relative' | 'static' | 'sticky';
     target: string | HTMLElement;
     title?: ReactNode;
-    positionOverride?: "absolute" | "fixed" | "relative" | "static" | "sticky";
   }
 >;
 

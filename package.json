@@ -1,5 +1,5 @@
 {
-  "name": "react-joyride",
+  "name": "@whartongroup/react-joyride",
   "version": "2.7.2",
   "description": "Create guided tours for your apps",
   "author": "Gil Barbara <gilbarbara@gmail.com>",
@@ -167,5 +167,9 @@
       "path": "./dist/index.mjs",
       "limit": "35 kB"
     }
-  ]
+  ],
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  }
 }

@@ -98,6 +98,7 @@ export default class JoyrideOverlay extends React.Component<OverlayProps, State>
     const { showSpotlight } = this.state;
     const {
       disableScrollParentFix = false,
+      positionOverride,
       spotlightClicks,
       spotlightPadding = 0,
       styles,
@@ -114,7 +115,7 @@ export default class JoyrideOverlay extends React.Component<OverlayProps, State>
       left: Math.round((elementRect?.left ?? 0) - spotlightPadding),
       opacity: showSpotlight ? 1 : 0,
       pointerEvents: spotlightClicks ? 'none' : 'auto',
-      position: isFixedTarget ? 'fixed' : (this.props.positionOverride ?? 'absolute'),
+      position: isFixedTarget ? 'fixed' : positionOverride ?? 'absolute',
       top,
       transition: 'opacity 0.2s',
       width: Math.round((elementRect?.width ?? 0) + spotlightPadding * 2),
