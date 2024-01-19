@@ -1,6 +1,6 @@
 {
   "name": "@whartongroup/react-joyride",
-  "version": "2.7.2",
+  "version": "1.0.0",
   "description": "Create guided tours for your apps",
   "author": "Gil Barbara <gilbarbara@gmail.com>",
   "repository": {
